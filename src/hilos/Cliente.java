@@ -31,6 +31,7 @@ public class Cliente extends Thread {
         }
     }
     
+    // Metodo encargado de enviar los mensajes a los demas usuarios del chat
     public void enviar(String mensaje) {
         try {
             output.writeUTF(mensaje);
